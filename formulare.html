@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formuláře</title>
+  </head>
+  <body>
+    <h1>Formuláře</h1>
+    
+    <form>
+      <fieldset>
+        <legend>Textové vstupy</legend> 
+          <label>Jméno</label>
+          <input type="text" name="jmeno" placeholder="Jméno"> <br>
+       
+          <label>Příjmení</label>
+          <input type="text" name="prijmeni" placeholder="Příjmení"> <br>
+       
+          <label>Email</label>
+          <input type="email" name="email" placeholder="jmeno@domena.cz"> <br>
+       
+          <label>Telefon</label>
+          <input type="tel" name="telefon" placeholder="+420 777 777 777"> <br>    
+       
+          <label for="heslo">Heslo</label>
+          <input name="heslo" type="password" placeholder="Min. 8 znaků" minlength="8">
+        
+        <br>
+                               
+      </fieldset>   
+      
+      <fieldset>
+        <legend>Čísla,datum a čas</legend>
+        
+          <label>Věk</label>
+          <input name="vek" type="number" min="10" max="100" step="1" placeholder="10-100">
+        
+        <br>
+      
+          <label>Datum</label>
+          <input name="datum" type="date" placeholder="datum">
+        
+        <br>
+          
+          <label>Čas</label>
+          <input name="cas" type="time" placeholder="čas">
+        
+        <br>
+          
+          <label>Barva</label>
+          <input name="barva" type="color" value="#2aa7fff">
+        
+        <br>
+          
+          <label>Posuvnik</label>
+          <input name="posuvnik" type="range" min="0" max="10" value="3">
+        
+        <br>
+                      
+      </fieldset> 
+       
+      <fieldset>
+        <legend>Výběry</legend>
+        <label>Třída</label>
+          
+          <select>
+            <option value="">-vyber-</option>
+            
+            <option value="1A">1A</option>
+            
+            <option value="1B">1B</option>
+            
+            <option value="1C">1C</option>
+          </select>
+          
+          <input name="zeme" placeholder="Napiš zemi..." list="zeme-list">
+          <datalist id="zeme-list">                                     
+            <option value="Česká republika"></option>
+            <option value="Slovensko"></option>
+            <option value="Rakousko"></option>
+            <option value="Německo"></option>
+            <option value="Polsko"></option>
+          </datalist>
+          
+        <br>
+          
+          <label><input type="checkbox" name="html" value="html"> HTML </label> 
+        
+        <br>
+          
+          <label>Pohlaví</label>
+          <label><input type="radio" name="pohlavi" value="zena"> žena </label>
+          <label><input type="radio" name="pohlavi" value="muz"> muž </label>
+          <label><input type="radio" name="pohlavi" value="jine"> jiné </label>
+          
+      </fieldset>
+       
+       <button type="submit">Odeslat</button>
+    
+    </form>
+  </body>
+</html>
